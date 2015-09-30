@@ -1,0 +1,39 @@
+
+
+
+CREATE  TABLE `test`.`EmailQueue` (
+  `ID` INT NOT NULL ,
+  `FromEmail` VARCHAR(45) NULL ,
+  `ToEmail` VARCHAR(45) NULL ,
+  `Subject` VARCHAR(45) NULL ,
+  `Body` VARCHAR(45) NULL ,
+  PRIMARY KEY (`ID`) );
+  
+  
+INSERT INTO `test`.`EmailQueue` (`ID`, `FromEmail`, `ToEmail`, `Subject`, `Body`) VALUES (1, 'mohit.nitrr@gmail.com', 'mohitrpr@gmail.com', 'test', 'hello');
+INSERT INTO `test`.`EmailQueue` (`ID`, `FromEmail`, `ToEmail`, `Subject`, `Body`) VALUES (2, 'mohit.nitrr@gmail.com', 'mohitrpr@gmail.com', 'check', 'hello');
+INSERT INTO `test`.`EmailQueue` (`ID`, `FromEmail`, `ToEmail`, `Subject`, `Body`) VALUES (3, 'mohit.nitrr@gmail.com', 'k.rushabhkumar2012@gmail.com', 'test', 'hello');
+INSERT INTO `test`.`EmailQueue` (`ID`, `FromEmail`, `ToEmail`, `Subject`, `Body`) VALUES (4, 'mohit.nitrr@gmail.com', 'k.rushabhkumar2012@gmail.com', 'test', 'hiiiii');
+
+
+CREATE  TABLE `test`.`EmailCounter` (
+  `No` INT NOT NULL ,
+  `Counter` INT NULL ,
+  PRIMARY KEY (`No`) );
+  
+INSERT INTO `test`.`EmailCounter` (`No`, `Counter`) VALUES (1, 0);
+  
+  
+  
+  
+CREATE  TABLE `test`.`EmailPassword` (
+  `ID` INT NOT NULL ,
+  `Email` VARCHAR(45) NULL ,
+  `Password` VARCHAR(45) NULL ,
+  PRIMARY KEY (`ID`) );
+  
+INSERT INTO `test`.`EmailPassword` (`ID`, `Email`, `Password`, ) VALUES (1, 'mohit.nitrr@gmail.com', '####');
+  
+Replace '#######' with actual password.  
+ 
+  
